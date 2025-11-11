@@ -75,3 +75,19 @@ def main():
         print("3. Search Contact")
         print("4. Delete Contact")
         print("5. Exit")
+      
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == "1":
+            add_contact(contacts)
+        elif choice == "2":
+            view_contacts(contacts)
+        elif choice == "3":
+            search_contacts(contacts)
+        elif choice == "4":
+            delete_contact(contacts)
+        elif choice == "5":
+            print("👋 Goodbye!")
+            break
+        else:
+            print("⚠️ Invalid choice! Please try again.")
