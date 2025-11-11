@@ -1,4 +1,4 @@
-# 📘 Basic Contact Book in Python
+# Basic Contact Book in Python
 
 import os
 
