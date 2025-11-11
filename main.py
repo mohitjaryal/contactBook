@@ -22,3 +22,6 @@ def save_contacts(contacts):
 
 
 # Add new contact
+def add_contact(contacts):
+    name = input("Enter name :").title()
+    
