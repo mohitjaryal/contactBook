@@ -33,5 +33,7 @@ def add_contact(contacts):
     
 # View all contacts
 def view_contacts(contacts):
-    if not in contacts:
-        print('')
+    if not contacts:
+        print('No contact found')
+        return
+    
