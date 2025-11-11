@@ -3,3 +3,5 @@
 import os
 
 CONTACT_FILE = 'contact.txt'
+
+# Load contacts from file
