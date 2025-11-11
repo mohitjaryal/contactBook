@@ -13,3 +13,5 @@ def load_contacts():
                 name, phone, email = line.strip().split("|")
                 contacts[name] = {"phone": phone, "email": email}
     return contacts
+
+# Save contacts 
