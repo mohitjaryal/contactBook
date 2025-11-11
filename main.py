@@ -1,8 +1,8 @@
-# Contact Book made with python
+# 📘 Basic Contact Book in Python
 
 import os
 
-CONTACTS_FILE = 'contact.txt'
+CONTACTS_FILE = "contacts.txt"
 
 # Load contacts from file
 def load_contacts():
@@ -14,7 +14,8 @@ def load_contacts():
                 contacts[name] = {"phone": phone, "email": email}
     return contacts
 
-# Save contacts 
+
+# Save contacts to file
 def save_contacts(contacts):
     with open(CONTACTS_FILE, "w") as file:
         for name, info in contacts.items():
@@ -23,51 +24,56 @@ def save_contacts(contacts):
 
 # Add new contact
 def add_contact(contacts):
-    name = input("Enter name :").title()
-    phone = input('Enter phone number :')
-    email = input('Enter email address :')
-    contacts[name] = {'phone':phone,'email':email}
-    save_contacts()
-    print(f"Contact '{name}'added sucessfully")
+    name = input("Enter name: ").title()
+    phone = input("Enter phone number: ")
+    email = input("Enter email address: ")
+    contacts[name] = {"phone": phone, "email": email}
+    save_contacts(contacts)
+    print(f"✅ Contact '{name}' added successfully!")
 
-    
+
 # View all contacts
 def view_contacts(contacts):
     if not contacts:
-        print('No contact found')
+        print("📭 No contacts found!")
         return
-    print('\n All contacts')
+    print("\n📒 All Contacts:")
     print("-" * 30)
-    for name,info in contacts.items():
-        print("Name : '{name}'")
-        print("Phone : '{info['phone]}'")
-        print("Email : '{info['email]}'")
+    for name, info in contacts.items():
+        print(f"Name: {name}")
+        print(f"Phone: {info['phone']}")
+        print(f"Email: {info['email']}")
         print("-" * 30)
 
+
 # Search contact
-def search_contacts(contacts):
-    search_name = input('Enter contact name to search :').title()
+def search_contact(contacts):
+    search_name = input("Enter name to search: ").title()
     if search_name in contacts:
         info = contacts[search_name]
         print(f"\n🔍 Found Contact:")
         print(f"Name: {search_name}")
         print(f"Phone: {info['phone']}")
         print(f"Email: {info['email']}")
+    else:
+        print("❌ Contact not found!")
 
 
 # Delete contact
 def delete_contact(contacts):
-    del_name = input('Enter contact name to delete :')
+    del_name = input("Enter name to delete: ").title()
     if del_name in contacts:
         del contacts[del_name]
         save_contacts(contacts)
         print(f"🗑️ Contact '{del_name}' deleted successfully!")
     else:
-        print("Contact not found !")
+        print("❌ Contact not found!")
+
 
 # Main menu
 def main():
     contacts = load_contacts()
+
     while True:
         print("\n===== 📘 Contact Book Menu =====")
         print("1. Add Contact")
@@ -75,7 +81,7 @@ def main():
         print("3. Search Contact")
         print("4. Delete Contact")
         print("5. Exit")
-      
+
         choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
@@ -83,7 +89,7 @@ def main():
         elif choice == "2":
             view_contacts(contacts)
         elif choice == "3":
-            search_contacts(contacts)
+            search_contact(contacts)
         elif choice == "4":
             delete_contact(contacts)
         elif choice == "5":
@@ -92,5 +98,6 @@ def main():
         else:
             print("⚠️ Invalid choice! Please try again.")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
