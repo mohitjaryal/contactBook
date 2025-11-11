@@ -61,4 +61,4 @@ def delete_contact(contacts):
     if del_name in contacts:
         del contacts[del_name]
         save_contacts(contacts)
-        
+        print(f"🗑️ Contact '{del_name}' deleted successfully!")
