@@ -62,3 +62,5 @@ def delete_contact(contacts):
         del contacts[del_name]
         save_contacts(contacts)
         print(f"🗑️ Contact '{del_name}' deleted successfully!")
+    else:
+        print("Contact not found !")
