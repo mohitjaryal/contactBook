@@ -5,10 +5,11 @@ import os
 CONTACTS_FILE = 'contact.txt'
 
 # Load contacts from file
-def load_contact():{
+def load_contacts():
     contacts = {}
-    if(os.path.exist(CONTACTS_FILE)):
-    with. open(CONTACTS_FILE,'r') as file
-    for line in file:
-    name 
-}
+    if os.path.exists(CONTACTS_FILE):
+        with open(CONTACTS_FILE, "r") as file:
+            for line in file:
+                name, phone, email = line.strip().split("|")
+                contacts[name] = {"phone": phone, "email": email}
+    return contacts
