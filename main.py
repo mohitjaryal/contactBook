@@ -8,5 +8,7 @@ CONTACTS_FILE = 'contact.txt'
 def load_contact():{
     contacts = {}
     if(os.path.exist(CONTACTS_FILE)):
-    
+    with. open(CONTACTS_FILE,'r') as file
+    for line in file:
+    name 
 }
