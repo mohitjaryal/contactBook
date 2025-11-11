@@ -36,4 +36,4 @@ def view_contacts(contacts):
     if not contacts:
         print('No contact found')
         return
-    
+    print('\n All contacts')
