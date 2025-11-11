@@ -2,6 +2,11 @@
 
 import os
 
-CONTACT_FILE = 'contact.txt'
+CONTACTS_FILE = 'contact.txt'
 
 # Load contacts from file
+def load_contact():{
+    contacts = {}
+    if(os.path.exist(CONTACTS_FILE)):
+    
+}
