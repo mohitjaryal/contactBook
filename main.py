@@ -27,4 +27,5 @@ def add_contact(contacts):
     phone = input('Enter phone number :')
     email = input('Enter email address :')
     contacts[name] = {'phone':phone,'email':email}
-    
+    save_contacts()
+    print(f'Contact')
