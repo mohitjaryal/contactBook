@@ -46,4 +46,5 @@ def view_contacts(contacts):
 
 # Search contact
 def search_contacts(contacts):
-    
+    search_name = input('Enter contact name to search :').title()
+    if search_name in contacts
