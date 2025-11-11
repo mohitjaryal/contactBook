@@ -47,4 +47,10 @@ def view_contacts(contacts):
 # Search contact
 def search_contacts(contacts):
     search_name = input('Enter contact name to search :').title()
-    if search_name in contacts
+    if search_name in contacts:
+        info = contacts[search_name]
+        print(f"\n🔍 Found Contact:")
+        print(f"Name: {search_name}")
+        print(f"Phone: {info['phone']}")
+        print(f"Email: {info['email']}")
+        
