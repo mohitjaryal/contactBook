@@ -42,3 +42,4 @@ def view_contacts(contacts):
         print("Name : '{name}'")
         print("Phone : '{info['phone]}'")
         print("Email : '{info['email]}'")
+        print("-" * 30)
