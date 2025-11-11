@@ -43,3 +43,7 @@ def view_contacts(contacts):
         print("Phone : '{info['phone]}'")
         print("Email : '{info['email]}'")
         print("-" * 30)
+
+# Search contact
+def search_contacts(contacts):
+    
