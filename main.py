@@ -19,4 +19,6 @@ def save_contacts(contacts):
     with open(CONTACTS_FILE, "w") as file:
         for name, info in contacts.items():
             file.write(f"{name}|{info['phone']}|{info['email']}\n")
-            
+
+
+# Add new contact
