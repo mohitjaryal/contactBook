@@ -17,4 +17,4 @@ def load_contacts():
 # Save contacts 
 def save_contact(contacts):
     with open(CONTACTS_FILE,'w') as file:
-    for name 
+    for name,info in contacts.items();
