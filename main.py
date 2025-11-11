@@ -37,3 +37,8 @@ def view_contacts(contacts):
         print('No contact found')
         return
     print('\n All contacts')
+    print("-" * 30)
+    for name,info in contacts.items():
+        print("Name : '{name}'")
+        print("Phone : '{info['phone]}'")
+        print("Email : '{info['email]}'")
