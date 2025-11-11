@@ -53,4 +53,9 @@ def search_contacts(contacts):
         print(f"Name: {search_name}")
         print(f"Phone: {info['phone']}")
         print(f"Email: {info['email']}")
-        
+
+
+# Delete contact
+def delete_contact(contacts):
+    del_name = input('Enter contact name to delete :')
+    
