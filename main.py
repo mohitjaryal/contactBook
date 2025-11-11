@@ -69,4 +69,9 @@ def delete_contact(contacts):
 def main():
     contacts = load_contacts()
     while True:
-        
+        print("\n===== 📘 Contact Book Menu =====")
+        print("1. Add Contact")
+        print("2. View Contacts")
+        print("3. Search Contact")
+        print("4. Delete Contact")
+        print("5. Exit")
