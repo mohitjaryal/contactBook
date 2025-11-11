@@ -29,4 +29,6 @@ def add_contact(contacts):
     contacts[name] = {'phone':phone,'email':email}
     save_contacts()
     print(f"Contact '{name}'added sucessfully")
+
     
+# View all contacts
