@@ -58,4 +58,7 @@ def search_contacts(contacts):
 # Delete contact
 def delete_contact(contacts):
     del_name = input('Enter contact name to delete :')
-    
+    if del_name in contacts:
+        del contacts[del_name]
+        save_contacts(contacts)
+        
