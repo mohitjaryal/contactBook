@@ -32,3 +32,5 @@ def add_contact(contacts):
 
     
 # View all contacts
+def view_contacts(contacts):
+    
