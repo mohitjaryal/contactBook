@@ -15,3 +15,5 @@ def load_contacts():
     return contacts
 
 # Save contacts 
+def save_contact(contacts):
+    
