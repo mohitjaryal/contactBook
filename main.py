@@ -64,3 +64,9 @@ def delete_contact(contacts):
         print(f"🗑️ Contact '{del_name}' deleted successfully!")
     else:
         print("Contact not found !")
+
+# Main menu
+def main():
+    contacts = load_contacts()
+    while True:
+        
