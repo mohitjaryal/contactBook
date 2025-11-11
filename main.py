@@ -33,4 +33,5 @@ def add_contact(contacts):
     
 # View all contacts
 def view_contacts(contacts):
-    
+    if not in contacts:
+        print('')
